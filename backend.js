@@ -114,8 +114,8 @@ wss.on('connection', (ws, req) => {
                     } else {
                         chunksToLoad[c] = chunks[c]
                     }
-                    send(ws, { chunks: chunksToLoad });
                 }
+                send(ws, { chunks: chunksToLoad });
                 break
             }
 
